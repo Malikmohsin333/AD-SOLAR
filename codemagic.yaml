@@ -3,6 +3,8 @@ workflows:
     name: iOS Unsigned Build
     max_build_duration: 120
     instance_type: mac_mini_m2
+    environment:
+      flutter: 3.22.0  # Ya koi stable version jo Dart 3.4+ support kare
     scripts:
       - flutter clean
       - flutter pub get
